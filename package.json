@@ -13,15 +13,19 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
     "typecheck": "tsc --noEmit",
     "prebuild": "npm run lint && npm run typecheck"
   },
-  "keywords": ["cli", "typescript"],
+  "keywords": [
+    "cli",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.24",
     "@typescript-eslint/eslint-plugin": "^7.1.0",

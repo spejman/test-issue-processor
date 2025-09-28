@@ -7,12 +7,15 @@ export function greet(name: string, options: GreetOptions): void {
   console.log(greeting); // eslint-disable-line no-console
 }
 
-export function formatGreeting(name: string, options: GreetOptions = {}): string {
+export function formatGreeting(
+  name: string,
+  options: GreetOptions = {},
+): string {
   let greeting = `Hello, ${name}!`;
-  
+
   if (options.uppercase) {
     greeting = greeting.toUpperCase();
   }
-  
+
   return greeting;
 }
