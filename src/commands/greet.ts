@@ -9,10 +9,10 @@ export function greet(name: string, options: GreetOptions): void {
 
 export function formatGreeting(name: string, options: GreetOptions = {}): string {
   let greeting = `Hello, ${name}!`;
-  
+
   if (options.uppercase) {
     greeting = greeting.toUpperCase();
   }
-  
+
   return greeting;
 }
