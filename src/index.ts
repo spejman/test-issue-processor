@@ -2,6 +2,9 @@
 
 import { Command } from 'commander';
 import { greet } from './commands/greet';
+import { getImploidAsciiArt } from './utils/ascii-art';
+
+console.log(getImploidAsciiArt());
 
 const program = new Command();
 
